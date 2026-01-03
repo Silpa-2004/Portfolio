@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silpa - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sticky Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo">Silpa</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#tech-stack" class="nav-link">Tech Stack</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <span class="theme-icon">🌙</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero / About Section -->
+    <section class="hero" id="about">
+        <div class="hero-background">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-name">Hi, I'm <span class="highlight">Silpa</span></h1>
+                <p class="hero-role">Final Year ECE Student | Aspiring Full Stack Web Developer</p>
+                <p class="hero-tagline">Currently pursuing Full Stack Web Development at Kodnest</p>
+                <div class="hero-intro">
+                    <p>I'm a passionate Electronics & Communication Engineering student with a keen interest in Web Development and IoT. As a fresher actively seeking frontend opportunities, I'm excited to bring my technical skills and creative problem-solving abilities to innovative projects.</p>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="resumeKodnest.pdf" class="btn btn-secondary"  download>Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-image">
+                    <img src="picture.jpg" alt="Silpa - Profile Picture">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack" id="tech-stack">
+        <div class="container">
+            <h2 class="section-title">Tech Stack</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-icon">HTML</div>
+                    <h3>HTML</h3>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">CSS</div>
+                    <h3>CSS</h3>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">JS</div>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="tech-card">
+                    <div class="tech-icon">IoT</div>
+                    <h3>Basics of IoT</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Some of my recent work</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🌾</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Crop Irrigation and Animal Intrusion System</h3>
+                        <p>Uses IoT technology and Machine Learning to train datasets for detecting plant diseases and animal intrusion. Monitors soil moisture, temperature, and humidity to improve crop productivity.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">🏠</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IoT Home Automation</h3>
+                        <p>Designed to control electronic devices remotely using IoT technology for smart home automation.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">📱</div>
+                    </div>
+                    <div class="project-content">
+                        <h3>GSM Based Attendance Alert System</h3>
+                        <p>Sends attendance notifications and alerts directly to mobile devices using GSM technology.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <p class="section-subtitle">Milestones in my journey</p>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <div class="achievement-icon">🎓</div>
+                    <div class="achievement-content">
+                        <h3>Final Year ECE Student</h3>
+                        <p>Pursuing Electronics & Communication Engineering with focus on web development and IoT</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">💻</div>
+                    <div class="achievement-content">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Currently enrolled in comprehensive Full Stack Web Development program at Kodnest</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <div class="achievement-icon">🚀</div>
+                    <div class="achievement-content">
+                        <h3>IoT Projects</h3>
+                        <p>Successfully completed multiple IoT-based projects including home automation and agricultural monitoring systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A glimpse into my work</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="cropimage.png" alt="Gallery Image 1" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-zoom">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="homeimage.jpeg" alt="Gallery Image 2" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-zoom">🔍</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="attendanceimage.jpeg" alt="Gallery Image 3" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-zoom">🔍</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="Lightbox Image" class="lightbox-image" id="lightboxImage">
+        <button class="lightbox-prev" id="lightboxPrev">&#10094;</button>
+        <button class="lightbox-next" id="lightboxNext">&#10095;</button>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Let's connect and create something amazing together</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:232h5a0418@audisankara.ac.in">232h5a0418@audisankara.ac.in</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div class="contact-details">
+                            <h3>GitHub</h3>
+                            <a href="https://github.com/silpa" target="_blank" rel="noopener noreferrer">github.com/silpa</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <h3>LinkedIn</h3>
+                            <a href="https://linkedin.com/in/silpa-sure-0b1743342" target="_blank" rel="noopener noreferrer">linkedin.com/in/silpa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <span>↑</span>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Silpa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
