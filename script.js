@@ -1,6 +1,4 @@
-// ============================================
 // Theme Toggle Functionality
-// ============================================
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = themeToggle.querySelector('.theme-icon');
 
@@ -22,9 +20,9 @@ function updateThemeIcon(theme) {
     themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
 }
 
-// ============================================
+
 // Mobile Menu Toggle
-// ============================================
+
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 const navLinks = document.querySelectorAll('.nav-link');
@@ -42,9 +40,9 @@ navLinks.forEach(link => {
     });
 });
 
-// ============================================
+
 // Active Navigation Link on Scroll
-// ============================================
+
 const sections = document.querySelectorAll('section[id]');
 
 function updateActiveNav() {
@@ -67,9 +65,9 @@ function updateActiveNav() {
 
 window.addEventListener('scroll', updateActiveNav);
 
-// ============================================
+
 // Smooth Scrolling for Navigation Links
-// ============================================
+
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
@@ -88,9 +86,8 @@ navLinks.forEach(link => {
     });
 });
 
-// ============================================
 // Scroll-triggered Animations
-// ============================================
+
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -113,9 +110,9 @@ animatedElements.forEach(element => {
     observer.observe(element);
 });
 
-// ============================================
+
 // Scroll to Top Button
-// ============================================
+
 const scrollTopBtn = document.getElementById('scrollTop');
 
 window.addEventListener('scroll', () => {
@@ -133,9 +130,9 @@ scrollTopBtn.addEventListener('click', () => {
     });
 });
 
-// ============================================
+
 // Gallery Lightbox Functionality
-// ============================================
+
 const galleryItems = document.querySelectorAll('.gallery-item');
 const lightbox = document.getElementById('lightbox');
 const lightboxImage = document.getElementById('lightboxImage');
@@ -205,49 +202,14 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ============================================
-// Resume Download Button (Dummy)
-// ============================================
-const resumeBtn = document.getElementById('resumeBtn');
 
-resumeBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    // In a real implementation, this would download an actual PDF
-    // For now, we'll show an alert
-    alert('Resume download feature will be available soon!');
-    
-    // Uncomment below to create a dummy PDF download:
-    // const link = document.createElement('a');
-    // link.href = '#'; // Replace with actual PDF path
-    // link.download = 'Silpa_Resume.pdf';
-    // link.click();
-});
 
-// ============================================
-// Header Shadow on Scroll
-// ============================================
-const header = document.getElementById('header');
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
-    } else {
-        header.style.boxShadow = '0 1px 2px 0 rgba(0, 0, 0, 0.05)';
-    }
-});
-
-// ============================================
 // Initialize on Page Load
-// ============================================
+
 document.addEventListener('DOMContentLoaded', () => {
     // Trigger initial active nav update
     updateActiveNav();
-    
-    // Add fade-in animation to hero content
-    const heroContent = document.querySelector('.hero-content');
-    if (heroContent) {
-        heroContent.style.animation = 'fadeInUp 1s ease forwards';
-    }
     
     // Smooth reveal for initial viewport elements
     const initialElements = document.querySelectorAll(
@@ -264,9 +226,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// ============================================
+
 // Performance Optimization: Throttle Scroll Events
-// ============================================
+
 function throttle(func, wait) {
     let timeout;
     return function executedFunction(...args) {
@@ -282,4 +244,7 @@ function throttle(func, wait) {
 // Apply throttling to scroll events
 const throttledUpdateActiveNav = throttle(updateActiveNav, 100);
 window.addEventListener('scroll', throttledUpdateActiveNav);
+
+
+
 
