@@ -1,6 +1,4 @@
-/* ============================================
-   CSS Variables for Theme Support
-   ============================================ */
+/* ================CSS Variables for Theme Support============================= */
 :root {
     --primary-color: #6366f1;
     --secondary-color: #8b5cf6;
@@ -31,9 +29,7 @@
     --border-color: #4b5563;
 }
 
-/* ============================================
-   Reset & Base Styles
-   ============================================ */
+/* ======================= Reset & Base Styles ========================== */
 * {
     margin: 0;
     padding: 0;
@@ -59,9 +55,7 @@ body {
     padding: 0 20px;
 }
 
-/* ============================================
-   Header & Navigation
-   ============================================ */
+/* ======================Header & Navigation=================== */
 .header {
     position: fixed;
     top: 0;
@@ -162,9 +156,7 @@ body {
     border-radius: 2px;
 }
 
-/* ============================================
-   Hero Section
-   ============================================ */
+/* ===================== Hero Section ====================== */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -253,10 +245,6 @@ body {
     }
 }
 
-.hero-text {
-    animation-delay: 0.2s;
-}
-
 .hero-name {
     font-size: 3.5rem;
     font-weight: 800;
@@ -336,7 +324,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation-delay: 0.4s;
 }
 
 .profile-image {
@@ -412,9 +399,7 @@ body {
     transform: rotate(45deg);
 }
 
-/* ============================================
-   Section Styles
-   ============================================ */
+/* ========================== Section Styles=========================== */
 section {
     padding: 80px 0;
     position: relative;
@@ -435,9 +420,7 @@ section {
     margin-bottom: 3rem;
 }
 
-/* ============================================
-   Tech Stack Section
-   ============================================ */
+/* ========================Tech Stack Section========================== */
 .tech-stack {
     background-color: var(--bg-secondary);
 }
@@ -497,9 +480,7 @@ section {
     margin-top: 1rem;
 }
 
-/* ============================================
-   Projects Section
-   ============================================ */
+/* ============================ Projects Section=============================== */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -560,9 +541,7 @@ section {
     line-height: 1.7;
 }
 
-/* ============================================
-   Achievements Section
-   ============================================ */
+/* ======================= Achievements Section============================= */
 .achievements {
     background-color: var(--bg-secondary);
 }
@@ -657,9 +636,7 @@ section {
     line-height: 1.7;
 }
 
-/* ============================================
-   Gallery Section
-   ============================================ */
+/* ========================Gallery Section=============================== */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -740,9 +717,7 @@ section {
     transform: scale(1);
 }
 
-/* ============================================
-   Lightbox Modal
-   ============================================ */
+/* =========================Lightbox Modal================================ */
 .lightbox {
     display: none;
     position: fixed;
@@ -834,9 +809,7 @@ section {
     transform: translateY(-50%) scale(1.1);
 }
 
-/* ============================================
-   Contact Section
-   ============================================ */
+/* ======================= Contact Section============================ */
 .contact {
     background-color: var(--bg-secondary);
 }
@@ -907,9 +880,7 @@ section {
     transform: translateX(5px);
 }
 
-/* ============================================
-   Scroll to Top Button
-   ============================================ */
+/* ===================Scroll to Top Button============================== */
 .scroll-top {
     position: fixed;
     bottom: 30px;
@@ -943,9 +914,7 @@ section {
     box-shadow: var(--shadow-xl);
 }
 
-/* ============================================
-   Footer
-   ============================================ */
+/* ===================== Footer========================= */
 .footer {
     background-color: var(--bg-tertiary);
     padding: 2rem 0;
@@ -954,9 +923,7 @@ section {
     border-top: 1px solid var(--border-color);
 }
 
-/* ============================================
-   Responsive Design
-   ============================================ */
+/* ===================Responsive Design============================ */
 @media (max-width: 768px) {
     .nav-menu {
         position: fixed;
@@ -1099,4 +1066,7 @@ section {
         font-size: 1.75rem;
     }
 }
+
+
+
 
